@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React, {useState, useEffect, useMemo, useCallback } from "react";
-import Button from './pages/Button'
+import Button from "./pages/Button"
 import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
 
 function App() {
