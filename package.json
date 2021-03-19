@@ -75,5 +75,9 @@
       "prettier --ignore-path .eslintignore --single-quote --write",
       "git add"
     ]
-  }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
 }
