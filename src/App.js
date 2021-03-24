@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React, {useState, useEffect, useMemo, useCallback } from "react";
-import Button from "./pages/Button"
 import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
+import Button from "./Components/Button"
 
 function App() {
   const [count1, setCount1] = useState(0);
@@ -42,12 +42,6 @@ function App() {
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return (
-    <h2>Home</h2>
-  )
 }
 
 export default App;
