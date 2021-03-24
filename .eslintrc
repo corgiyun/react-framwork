@@ -10,19 +10,19 @@
       "node": true
   },
   "rules": {
-      "arrow-parens": ["off"],
-      "compat/compat": "error",
+      "arrow-parens": "off",
+      "compat/compat": "off",
       "consistent-return": "off",
       "comma-dangle": "off",
       "generator-star-spacing": "off",
-      "import/no-unresolved": "error",
+      "import/no-unresolved": "off",
       "import/no-extraneous-dependencies": "off",
       "jsx-a11y/anchor-is-valid": "off",
       "no-console": "off",
       "no-use-before-define": "off",
       "no-unused-vars": "off",
       "no-multi-assign": "off",
-      "promise/param-names": "error",
+      "promise/param-names": "off",
       "promise/always-return": "off",
       "promise/catch-or-return": "off",
       "promise/no-native": "off",
@@ -31,7 +31,7 @@
       "react/jsx-filename-extension": [0],
       "react/prop-types": "off",
       "arrow-body-style": "off",
-      "react/button-has-type": "off"
-  },
-  "plugins": ["import", "promise", "compat"]
+      "react/button-has-type": "off",
+      "import/extensions":  "off"
+  }
 }

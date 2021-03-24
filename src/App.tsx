@@ -2,7 +2,7 @@
 // import './App.css';
 import React, {useState, useEffect, useMemo, useCallback } from "react";
 import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
-import Button from "./components/Button"
+import Button from "./components/Button/Index"
 
 function App() {
   const [count1, setCount1] = useState(0);
