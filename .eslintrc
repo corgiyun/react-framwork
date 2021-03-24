@@ -32,6 +32,8 @@
       "react/prop-types": "off",
       "arrow-body-style": "off",
       "react/button-has-type": "off",
-      "import/extensions":  "off"
+      "import/extensions":  "off",
+      "import-newlines/enforce": "off",
+      "import/newline-after-import": "off"
   }
 }
