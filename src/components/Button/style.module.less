@@ -1,6 +1,60 @@
-.default {
-  color: blue;
+@font-face {
+  font-family: 'iconfont';  /* project id 603492 */
+  src: url('//at.alicdn.com/t/font_603492_0vj7j2pka7lrqkt9.eot');
+  src: url('//at.alicdn.com/t/font_603492_0vj7j2pka7lrqkt9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_603492_0vj7j2pka7lrqkt9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_603492_0vj7j2pka7lrqkt9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_603492_0vj7j2pka7lrqkt9.svg#iconfont') format('svg');
 }
-.primary {
-  color: red
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size: inherit;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn {
+  border-radius: 4px;
+  font-size: 14px;
+  color: #1890ff;
+  padding: 0 15px;
+  height: 34px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+  margin: 10px;
+  &:hover {
+    opacity: .8;
+  }
+
+  .iconfont + span {
+    margin-left: 6px;
+  }
+}
+
+.btn-danger {
+  background: #ff4d4f;
+  color: #fff;
+  border-color: #ff4d4f;
+}
+.btn-small {
+  height: 24px;
+  font-size: 14px;
+  padding: 0 7px;
+}
+.btn-large {
+  height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+.btn-primary {
+  color: #fff;
+  background: #1890ff;
+  border-color: #1890ff;
+}
+.btn-dashed {
+  border-style: dashed 
 }

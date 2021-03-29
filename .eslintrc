@@ -34,6 +34,7 @@
       "react/button-has-type": "off",
       "import/extensions":  "off",
       "import-newlines/enforce": "off",
-      "import/newline-after-import": "off"
+      "import/newline-after-import": "off",
+      "prefer-template": "off"
   }
 }

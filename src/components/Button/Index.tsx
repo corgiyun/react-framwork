@@ -3,21 +3,26 @@ import style from './style.module.less'
 interface IProps {
   onClickButton: Function,
   children: any,
-  type?: 'primary' | 'warn' | 'dashed',
+  type?: 'primary' | 'danger' | 'dashed',
   size?: 'small' | 'large',
+  icon?: string
 }
 
 const Button = (props: IProps) =>{
-  const { onClickButton, children, type, size } = props;
+  const { onClickButton, children, type, size, icon } = props;
+  
   return (
     <>
       <button 
         onClick={onClickButton}
-        type={type || 'default-type'}
-        size={size || 'default-size'}
-        className={style.default}
+        type={type || 'default'}
+        size={size || 'default'}
+        className={`${style['btn-'+type]} ${style.btn} ${style['btn-'+size]}`}
         >
-        {children}
+        {
+          icon && <i className={style.iconfont}>{icon}</i>
+        }
+        <span> {children}</span>
       </button>
     </>
   )

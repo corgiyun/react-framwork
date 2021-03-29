@@ -31,14 +31,37 @@ function App() {
           <Route path="/" component={Home}></Route>
         </Switch>
       </div> */}
+     
       <div>
-        <Button onClickButton={handleClickButton1}>Button1</Button>
+        <Button 
+          onClickButton={handleClickButton2} 
+          type='dashed' 
+          size="small"
+          icon="&#xe627;">
+          Button1
+        </Button>
       </div>
       <div>
-        <Button onClickButton={handleClickButton2}>Button2</Button>
+        <Button 
+          onClickButton={()=> setCount3(count3 + 1)}>
+          Button2
+        </Button>
       </div>
       <div>
-        <Button onClickButton={()=> setCount3(count3 + 1)}>Button3</Button>
+        <Button 
+          onClickButton={handleClickButton1}
+          type="danger"
+          icon="&#xe666;"
+          size="large">
+          Button3
+        </Button>
+      </div>
+      <div>
+        <Button
+          onClickButton={handleClickButton1}
+          type="primary">
+          Button4
+        </Button>
       </div>
     </Router>
   );
