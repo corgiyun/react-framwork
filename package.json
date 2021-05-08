@@ -127,8 +127,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn commit",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E $HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
@@ -136,11 +136,6 @@
       "eslint --fix --cache --format=pretty",
       "prettier --ignore-path .eslintignore --single-quote --write",
       "git add"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
     ]
   },
   "jest": {
