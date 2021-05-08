@@ -1,40 +1,46 @@
 {
   "parser": "babel-eslint",
   "parserOptions": {
-      "sourceType": "module",
-      "allowImportExportEverywhere": true
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
   },
-  "extends": ["airbnb", "prettier"],
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
   "env": {
-      "browser": true,
-      "node": true
+    "browser": true,
+    "node": true
   },
   "rules": {
-      "arrow-parens": "off",
-      "compat/compat": "off",
-      "consistent-return": "off",
-      "comma-dangle": "off",
-      "generator-star-spacing": "off",
-      "import/no-unresolved": "off",
-      "import/no-extraneous-dependencies": "off",
-      "jsx-a11y/anchor-is-valid": "off",
-      "no-console": "off",
-      "no-use-before-define": "off",
-      "no-unused-vars": "off",
-      "no-multi-assign": "off",
-      "promise/param-names": "off",
-      "promise/always-return": "off",
-      "promise/catch-or-return": "off",
-      "promise/no-native": "off",
-      "prefer-destructuring": "off",
-      "no-lonely-if": "off",
-      "react/jsx-filename-extension": [0],
-      "react/prop-types": "off",
-      "arrow-body-style": "off",
-      "react/button-has-type": "off",
-      "import/extensions":  "off",
-      "import-newlines/enforce": "off",
-      "import/newline-after-import": "off",
-      "prefer-template": "off"
+    "arrow-parens": "off",
+    "compat/compat": "off",
+    "consistent-return": "off",
+    "comma-dangle": "off",
+    "generator-star-spacing": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-console": "off",
+    "no-use-before-define": "off",
+    "no-unused-vars": "off",
+    "no-multi-assign": "off",
+    "promise/param-names": "off",
+    "promise/always-return": "off",
+    "promise/catch-or-return": "off",
+    "promise/no-native": "off",
+    "prefer-destructuring": "off",
+    "no-lonely-if": "off",
+    "react/jsx-filename-extension": [
+      0
+    ],
+    "react/prop-types": "off",
+    "arrow-body-style": "off",
+    "react/button-has-type": "off",
+    "import/extensions": "off",
+    "import-newlines/enforce": "off",
+    "import/newline-after-import": "off",
+    "prefer-template": "off",
+    "import/prefer-default-export": "off"
   }
 }
