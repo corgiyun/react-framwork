@@ -63,7 +63,7 @@ function App() {
         </Button>
       </div>
       <div>
-        <Button onClickButton={() => setCount3(count3 + 1)}>Button2</Button>
+        <Button onClickButton={() => setCount3(count3 + 1)}>Button12</Button>
       </div>
       <div>
         <Button
