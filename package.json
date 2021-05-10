@@ -1,7 +1,7 @@
 {
   "name": "react-framwork",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "proxy": "https://oapi.dingtalk.com/robot",
   "dependencies": {
     "@babel/core": "7.12.3",
@@ -24,7 +24,6 @@
     "css-loader": "4.3.0",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
-    "eslint": "^7.11.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-import": "^2.22.1",
@@ -79,7 +78,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "commit": "git-cz",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "postinstall": "husky install"
   },
   "config": {
     "commitizen": {
@@ -121,6 +121,7 @@
     "less": "^4.1.1",
     "less-loader": "7.0.0",
     "lint-staged": "^10.5.4",
+    "pinst": "^2.1.6",
     "prettier": "^2.2.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^21.0.0",
