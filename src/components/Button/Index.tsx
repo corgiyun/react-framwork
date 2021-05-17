@@ -1,27 +1,26 @@
 import React from 'react'
 import style from './style.module.less'
+
 interface IProps {
-  onClickButton: Function,
+  onClickButton: () => void,
   children: any,
-  type?: 'primary' | 'danger' | 'dashed',
+  attr?: 'primary' | 'danger' | 'dashed',
   size?: 'small' | 'large',
   icon?: string
 }
 
-const Button = (props: IProps) =>{
-  const { onClickButton, children, type, size, icon } = props;
-  
+const Button = ({...props}: IProps) => {
+  const { onClickButton, children, attr, size, icon } = props
+
   return (
     <>
-      <button 
+      <button
         onClick={onClickButton}
-        type={type || 'default'}
-        size={size || 'default'}
-        className={`${style['btn-'+type]} ${style.btn} ${style['btn-'+size]}`}
-        >
-        {
-          icon && <i className={style.iconfont}>{icon}</i>
-        }
+        className={`${style['btn-' + attr]} ${style.btn} ${
+          style['btn-' + size]
+        }`}
+      >
+        {icon && <i className={style.iconfont}>{icon}</i>}
         <span> {children}</span>
       </button>
     </>

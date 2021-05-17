@@ -29,9 +29,9 @@ function App() {
     },
   }
   useEffect(() => {
-    server.PostDingRobotMsg({ ...sendData }).then((res) => {
-      console.log(res)
-    })
+    // server.PostDingRobotMsg({ ...sendData }).then((res) => {
+    //   console.log(res)
+    // })
   }, [])
 
   return (
@@ -55,7 +55,7 @@ function App() {
       <div>
         <Button
           onClickButton={handleClickButton2}
-          type="dashed"
+          attr="dashed"
           size="small"
           icon="&#xe627;"
         >
@@ -68,7 +68,7 @@ function App() {
       <div>
         <Button
           onClickButton={handleClickButton1}
-          type="danger"
+          attr="danger"
           icon="&#xe666;"
           size="large"
         >
@@ -76,7 +76,7 @@ function App() {
         </Button>
       </div>
       <div>
-        <Button onClickButton={handleClickButton1} type="primary">
+        <Button onClickButton={handleClickButton1} attr="primary">
           Button4
         </Button>
       </div>
