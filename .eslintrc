@@ -41,6 +41,7 @@
     "import-newlines/enforce": "off",
     "import/newline-after-import": "off",
     "prefer-template": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "react/no-array-index-key": "off"
   }
 }
