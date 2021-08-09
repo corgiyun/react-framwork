@@ -1,0 +1,33 @@
+.scrollArea {
+  position: relative;
+  /* overflow: hidden; */
+  height: 100vh;
+  width: 100vw;
+}
+
+.scroll {
+  position: absolute;
+  line-height: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  -webkit-animation: toScroll 2s linear infinite;
+  animation: toScroll 2s linear infinite;
+}
+
+.scrollContent {
+  margin-right: 8em;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+@keyframes toScroll {
+  0% {
+    transform: translate(100%);
+  }
+
+  100% {
+    transform: translate(-150%);
+  }
+}
