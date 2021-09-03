@@ -5,7 +5,7 @@ const XiaoHe = AsyncComponent(() => import('../pages/xiaohe/index'))
 
 const routes = [
   { path: '/test', component: Test },
-  { path: '/xiaohe', component: XiaoHe },
+  { path: '/', component: XiaoHe },
 ]
 
 export default routes
