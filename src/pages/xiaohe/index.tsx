@@ -9,6 +9,6 @@ export default function Index() {
     return num + 1
   }
   const result = useMemo(() => computed(b), [b])
-  console.log('render');
+  console.log(process.env);
   return <Button onClick={() => setA(a + 1)} attr="primary">点击{result}</Button>
 }
