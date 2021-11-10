@@ -1,6 +1,7 @@
 {
   "name": "react-framwork",
   "version": "0.1.0",
+  "license": "ISC",
   "private": false,
   "proxy": "https://oapi.dingtalk.com/robot",
   "dependencies": {
@@ -105,6 +106,7 @@
     "less": "^4.1.1",
     "less-loader": "7.0.0",
     "lint-staged": "^10.5.4",
+    "npm-test": "^1.0.3",
     "pinst": "^2.1.6",
     "prettier": "^2.2.1",
     "stylelint-config-prettier": "^8.0.2",
