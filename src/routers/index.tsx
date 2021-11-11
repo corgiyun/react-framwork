@@ -1,11 +1,11 @@
 import AsyncComponent from '../components/hoc/AsyncComponent'
 
 const Test = AsyncComponent(() => import('../pages/performance/index'))
-const XiaoHe = AsyncComponent(() => import('../pages/xiaohe/index'))
+const Button = AsyncComponent(() => import('../pages/button/index'))
 
 const routes = [
   { path: '/test', component: Test },
-  { path: '/', component: XiaoHe },
+  { path: '/', component: Button },
 ]
 
 export default routes
