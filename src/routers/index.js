@@ -1,4 +1,4 @@
-import AsyncComponent from '../components/hoc/AsyncComponent'
+import AsyncComponent from '../components/hoc/AsyncComponent.js'
 
 const Test = AsyncComponent(() => import('../pages/performance/index'))
 const Button = AsyncComponent(() => import('../pages/button/index'))
