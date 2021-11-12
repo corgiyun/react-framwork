@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react'
-import { fetchList } from '../../api/button'
+import { fetchList } from '@/api/testApi'
 import Button from '../../components/Button'
 
 export default function Index() {
