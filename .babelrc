@@ -2,7 +2,6 @@
   "presets": [
     "react-app",
     "@babel/env",
-    "@babel/react",
-    "@babel/typescript"
+    "@babel/react"
   ]
 }
