@@ -5,16 +5,14 @@ const API_URL = process.env.REACT_APP_API_URL
 const DingRobotUrl =
   'robot/send?access_token=7e1d6a87dd72676c589d70c559f42e5eb6e895d74e475ccf5d017aa0252a490d'
 
-const setHeader = {
-  'Content-Type': 'application/json; charset=utf-8',
+const setRequestHeader = () => {
+  return {
+    // 'Content-Type': 'application/json; charset=utf-8',
+    "token": localStorage.getItem("Token"),
+    "cache-control": "no-cache",
+  }
 }
-const instance = axios.create({
-  headers: {
-    'Content-Type': 'application/x-www-form-urlencoded',
-    token: '',
-  },
-  timeout: 10000, // 请求超时时间
-})
+const instance = axios.create({ timeout: 10000 })
 
 // 请求拦截
 instance.interceptors.request.use(
@@ -53,9 +51,9 @@ const service = () => {
             .filter(Boolean)
             .join('&')
         : ''
-    const url = `${API_URL}/${path}/${searchParams}`
+    const url = `${API_URL}${path}${searchParams}`
     return instance
-      .get(url, {})
+      .get(url, {headers: setRequestHeader(),})
       .then((res) => {
         return res
       })
@@ -69,6 +67,7 @@ const service = () => {
       method: 'post',
       url: `${API_URL}/${path}`,
       data: params,
+      headers: setRequestHeader()
     })
       .then((res) => {
         return res
@@ -122,7 +121,6 @@ const service = () => {
       method: 'post',
       url: `${DingRobotUrl}`, // 代理已设置为钉钉的接口
       data: params,
-      headers: setHeader,
     })
       .then((res) => {
         return res

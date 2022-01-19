@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "license": "ISC",
   "private": false,
-  "proxy": "https://oapi.dingtalk.com/robot",
   "dependencies": {
     "antd": "^4.16.13",
     "axios": "^0.21.1",
+    "bfj": "^7.0.2",
     "mobx": "^6.3.7",
     "mobx-react": "^7.2.1",
     "react": "^17.0.1",
@@ -15,7 +15,8 @@
     "react-dom": "^17.0.1",
     "react-refresh": "^0.8.3",
     "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "rxjs": "^7.5.2"
   },
   "scripts": {
     "start": "node scripts/start.js",
