@@ -25,8 +25,8 @@ function Index() {
   })
 
   useEffect(() => {
-    message.info('success')
-    fetchIndex({ page: 1, pageSize: 10 })
+    // message.info('success')
+    // fetchIndex({ page: 1, pageSize: 10 })
     // login({name: 'liming', password:'123456'})
   }, [])
 
